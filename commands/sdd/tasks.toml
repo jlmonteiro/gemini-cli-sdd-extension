@@ -1,0 +1,9 @@
+# /sdd:tasks
+# Create a transactional tasks.md file for a specific story or epic.
+
+description = "Create a transactional tasks.md file in a [seq]-[slug] folder for a story or epic."
+
+prompt = """
+1. Activate the `sdd-tasks` skill to create a detailed execution plan.
+2. Follow the specialized task planning workflow in the `sdd-tasks` skill to decompose stories and link them to requirements.
+"""

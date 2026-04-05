@@ -1,0 +1,9 @@
+# /sdd:check
+# Analyzes the current project's compliance with the SDD specification structure.
+
+description = "Analyze the current project's compliance with the ./docs/specification structure."
+
+prompt = """
+1. Activate the `sdd-check` skill to audit the project's compliance with SDD mandates.
+2. Follow the specialized compliance audit workflow in the `sdd-check` skill to report structural or documentation gaps.
+"""

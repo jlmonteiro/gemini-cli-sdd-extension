@@ -1,0 +1,15 @@
+# /sdd:init
+# Initializes the project with the standard SDD specification structure.
+
+description = "Initialize the SDD specification structure, retroactively inspecting existing code if present."
+
+prompt = """
+1. Check if the `./docs/specification` folder already exists.
+2. If it does NOT exist:
+   - Activate the `sdd-init` skill to handle the initialization and retroactive codebase inspection.
+   - Follow the specialized initialization workflow defined in the `sdd-init` skill.
+3. If it DOES exist:
+   - Inform the user that the specification already exists.
+   - List the existing files.
+   - Ask if they would like to start a new change using `/sdd:requirements`.
+"""

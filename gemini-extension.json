@@ -1,0 +1,5 @@
+{
+  "name": "sdd-extension",
+  "version": "0.1.0",
+  "description": "Spec-driven development (SDD) extension for Gemini CLI."
+}

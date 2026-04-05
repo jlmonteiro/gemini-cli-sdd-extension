@@ -1,0 +1,9 @@
+# /sdd:design
+# Define or update the implementation strategy and technical solutions.
+
+description = "Define or update implementation strategy and BDD-style test scenarios."
+
+prompt = """
+1. Activate the `sdd-design` skill to perform a design gap analysis.
+2. Follow the specialized design workflow in the `sdd-design` skill to sync implementation and testing with the requirements.
+"""

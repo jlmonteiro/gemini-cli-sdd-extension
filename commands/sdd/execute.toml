@@ -1,0 +1,14 @@
+# /sdd:execute
+# Executes the implementation of a specific user story or task from the active task plan.
+
+description = "Execute the implementation of a user story, adhering to design and local project standards."
+
+prompt = """
+1. Activate the `sdd-execute` skill to handle the implementation.
+2. If a specific Story ID (e.g., US-1) is provided, focus strictly on that story. 
+3. Follow the specialized execution workflow to:
+   - Identify local standards from `GEMINI.md`.
+   - Implement tasks atomically.
+   - Verify each change with tests.
+   - Update `tasks.md` in real-time.
+"""

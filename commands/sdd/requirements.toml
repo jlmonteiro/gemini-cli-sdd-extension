@@ -1,0 +1,9 @@
+# /sdd:requirements
+# Define or update functional/non-functional requirements and architectural decisions.
+
+description = "Define or update requirements (Functional, Non-Functional, Assumptions, Constraints, Dependencies) in requirements.md."
+
+prompt = """
+1. Activate the `sdd-requirements` skill to manage the project's requirements.
+2. Follow the specialized workflow in the `sdd-requirements` skill to gather scope and update `requirements.md`.
+"""
