@@ -14,13 +14,15 @@ When executing this skill, you MUST:
 *   **Think Step-by-Step:** Reason through the business impact and user friction before drafting requirements.
 *   **Be Assertive:** Protect the scope. If a request is vague, ask clarifying questions instead of making assumptions.
 *   **Explicit Verbosity:** Acceptance criteria MUST be exhaustive. Include every success condition, every validation rule, and every expected error message.
-*   **Be Highly Interactive:** Never assume requirements. Always ask the user to refine the scope through a structured dialogue.
+*   **Be Proactively Interactive:** Never assume requirements are complete. Based on the user's initial input, you MUST identify potential gaps, edge cases, or improvements and suggest them to the user for confirmation.
 
 ## Workflow: Manage Requirements
 
-### 1. Interactive Discovery (Structured Dialogue)
-Before writing any requirement, you MUST engage the user in a structured dialogue to extract the core needs:
+### 1. Interactive Discovery (Structured Dialogue & Gap Analysis)
+Before writing any requirement, you MUST engage the user in a structured dialogue to extract and **refine** the core needs:
 
+- **Context Gathering:** Ask the user for the high-level context of the change.
+- **Gap Analysis & Suggestions:** Based on the user's input, you MUST proactively suggest potential requirements or point out gaps. For example: "I see you want to add X. Should we also consider how this impacts Y?" or "For a feature like this, we usually need NFRs for Z. Would you like me to include those?"
 - **Actors & Roles:** Ask the user: "Who are the primary actors involved in this new feature? What are their specific roles and motivations?"
 - **Functional Requirements (FR):** Ask the user: "What are the core functional requirements? What should the system do from the perspective of each actor identified?"
 - **Non-Functional Requirements (NFR) & Technical Constraints:** Ask the user: "What are the non-functional requirements and technical constraints? Consider aspects like:
