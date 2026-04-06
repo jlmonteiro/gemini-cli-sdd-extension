@@ -60,7 +60,7 @@ gemini extensions install https://github.com/jlmonteiro/gemini-cli-sdd-extension
 
 ## 📖 Documentation
 
-For detailed guides on architectural personas, tool guardrails, and advanced configuration, see the [Full Documentation](./docs/index.md).
+For detailed guides on architectural personas, tool guardrails, and advanced configuration, see the [Full Documentation](https://github.com/jlmonteiro/gemini-cli-sdd-extension/blob/main/docs/index.md).
 
 ## ⚖️ License
 
