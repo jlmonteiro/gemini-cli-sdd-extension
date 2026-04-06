@@ -4,6 +4,16 @@ The `sdd-extension` transforms Gemini CLI into a high-rigor, professional engine
 
 ---
 
+## 📑 Table of Contents
+
+- [🚀 Installation & Setup](#-installation--setup)
+- [🔄 Command Guide & Examples](#-command-guide--examples)
+- [🏗 Architecture & Personas](#-architecture--personas)
+- [🛡 Optimization Guardrails](#-optimization-guardrails)
+- [🤝 Contributing](#-contributing)
+
+---
+
 ## 🚀 Installation & Setup
 
 ### 1. Install from GitHub
@@ -115,3 +125,9 @@ The extension uses a **Thin Command / Fat Skill** architecture. Commands are sim
 - **Context Efficiency:** Uses `codebase_investigator` for broad analysis but switches to `grep_search` and `read_file` (with line ranges) for surgical implementation.
 - **Transaction Safety:** Uses `.current_transaction` to ensure multiple sessions or agents stay aligned on the same unit of work.
 - **Local Alignment:** Always prioritizes instructions found in the root `GEMINI.md` of the target project to ensure generated code matches existing conventions.
+
+---
+
+## 🤝 Contributing
+
+We welcome contributions! If you'd like to help improve the `sdd-extension`, please see our [Contributing Guide](./contributing.md) for instructions on local setup, commit standards, and the automated release process.

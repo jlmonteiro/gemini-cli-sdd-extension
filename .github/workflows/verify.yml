@@ -1,0 +1,30 @@
+name: Verify Extension
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 'lts/*'
+
+      - name: Install Gemini CLI
+        run: npm install -g @google/gemini-cli
+
+      - name: Pre-initialize Gemini Config
+        run: |
+          mkdir -p ~/.gemini
+          echo '{"projects": {}}' > ~/.gemini/projects.json
+
+      - name: Validate Extension
+        run: gemini extensions validate .
