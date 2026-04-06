@@ -21,8 +21,10 @@ jobs:
       - name: Install Gemini CLI
         run: npm install -g @google/gemini-cli
 
-      - name: Ensure Gemini Config Directory
-        run: mkdir -p ~/.gemini
+      - name: Pre-initialize Gemini Config
+        run: |
+          mkdir -p ~/.gemini
+          echo "{}" > ~/.gemini/projects.json
 
       - name: Validate Extension
         run: gemini extensions validate .
