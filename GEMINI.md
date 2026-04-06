@@ -23,6 +23,15 @@ Follow this iterative cycle for every feature or bug fix:
 - **Unit Testing:** Add or update tests for every logic change.
 - **Spec Compliance:** Perform a final review against the specification (requirements, design, and tasks) before concluding.
 
+## Development Standards
+
+### 1. Commit Conventions
+All commits MUST follow the [Conventional Commits](https://www.conventionalcommits.org/) specification. This is enforced via `commitlint` and `husky` and is used to automate versioning and releases.
+- **feat:** A new feature (corresponds to a MINOR version bump).
+- **fix:** A bug fix (corresponds to a PATCH version bump).
+- **chore/docs/style/refactor/test:** Maintenance tasks that do NOT trigger a new release.
+- **BREAKING CHANGE:** Use `!` or `BREAKING CHANGE:` in the footer for a MAJOR version bump.
+
 ## SDD Skill & Commands
 
 For detailed guidance and automated workflows, activate the **SDD Skill**:
